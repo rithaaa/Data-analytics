@@ -1,0 +1,485 @@
+======================================================================
+STUDENT PERFORMANCE ANALYTICS — ADVANCED
+======================================================================
+
+DATASET COLUMNS
+---------------
+The dataset contains exactly these 8 columns:
+
+1. gender
+2. race/ethnicity
+3. parental level of education
+4. lunch
+5. test preparation course
+6. math score
+7. reading score
+8. writing score
+
+PROJECT SCENARIO
+----------------
+You are working as a Junior Data Analyst for a school.
+
+The school has collected student performance data and wants to
+understand academic performance, identify patterns between groups,
+and study the effect of the test preparation course.
+
+Fetch the dataset from the given URL and perform the complete
+analysis using NUMPY.
+
+======================================================================
+PART 1 — LOAD AND UNDERSTAND THE DATA
+======================================================================
+
+1. Fetch the CSV dataset from the URL.
+
+2. Load the dataset.
+
+3. Display:
+   - number of rows
+   - number of columns
+   - shape
+   - size
+   - dtype
+
+4. Display the first 5 rows using slicing.
+
+5. Display the last 5 rows using slicing.
+
+6. Extract the following columns separately:
+   gender
+   race/ethnicity
+   parental level of education
+   lunch
+   test preparation course
+   math score
+   reading score
+   writing score
+
+7. Convert the three score columns into a numerical NumPy array.
+
+   The numerical array should contain:
+
+   math score
+   reading score
+   writing score
+
+======================================================================
+PART 2 — CREATE A STUDENT PERFORMANCE ARRAY
+======================================================================
+
+Using the three numerical columns, create a NumPy array where:
+
+Column 1 → Math
+Column 2 → Reading
+Column 3 → Writing
+
+8. Display the shape of this numerical array.
+
+9. Display the first 10 students.
+
+10. Extract:
+    - all Math scores
+    - all Reading scores
+    - all Writing scores
+
+11. Extract the scores of students 11 to 20 using slicing.
+
+======================================================================
+PART 3 — STUDENT-WISE ANALYSIS
+======================================================================
+
+For every student:
+
+12. Calculate the total score:
+
+    Math + Reading + Writing
+
+13. Calculate the average score.
+
+14. Find the student with the highest total score.
+
+15. Find the student with the lowest total score.
+
+16. Find the student with the highest average score.
+
+17. Find the student with the lowest average score.
+
+18. Find the difference between each student's highest and lowest
+    subject score.
+
+19. Find students whose difference between highest and lowest
+    subject score is greater than 20.
+
+======================================================================
+PART 4 — SUBJECT-WISE ANALYSIS
+======================================================================
+
+20. Calculate the average Math score.
+
+21. Calculate the average Reading score.
+
+22. Calculate the average Writing score.
+
+23. Calculate all three averages using a single NumPy operation
+    with the correct axis.
+
+24. Find the highest average subject.
+
+25. Find the lowest average subject.
+
+26. Calculate the maximum score for each subject.
+
+27. Calculate the minimum score for each subject.
+
+28. Calculate the standard deviation for each subject.
+
+29. Determine which subject has the greatest variation using
+    standard deviation.
+
+======================================================================
+PART 5 — ADVANCED BOOLEAN FILTERING
+======================================================================
+
+30. Find students who scored above 80 in Math.
+
+31. Find students who scored above 80 in Reading.
+
+32. Find students who scored above 80 in Writing.
+
+33. Find students who scored above 80 in ALL THREE subjects.
+
+34. Find students who scored above 80 in AT LEAST ONE subject.
+
+35. Find students who scored below 40 in ALL THREE subjects.
+
+36. Find students who scored below 40 in AT LEAST ONE subject.
+
+37. Find students who scored above 70 in Math AND Reading.
+
+38. Find students who scored above 70 in Reading AND Writing.
+
+39. Find students who scored above 70 in Math AND Reading
+    but below 70 in Writing.
+
+40. Find students whose average score is above 75 but who have
+    at least one subject score below 60.
+
+======================================================================
+PART 6 — SUBJECT BALANCE ANALYSIS
+======================================================================
+
+41. Calculate each student's average score.
+
+42. Calculate each student's maximum subject score.
+
+43. Calculate each student's minimum subject score.
+
+44. Calculate:
+
+    maximum score - minimum score
+
+    for every student.
+
+45. Find students whose subject-score difference is less than 10.
+
+    These students have relatively balanced performance.
+
+46. Find students whose subject-score difference is greater than 30.
+
+47. Find students who are strong in Math but relatively weak in
+    Writing:
+
+    Math > 75
+    Writing < 60
+
+48. Find students who are strong in Reading but relatively weak
+    in Math:
+
+    Reading > 75
+    Math < 60
+
+======================================================================
+PART 7 — COMPARE STUDENTS WITH SUBJECT AVERAGES
+======================================================================
+
+49. Calculate the average of each subject.
+
+50. Compare every student's Math score with the overall Math average.
+
+51. Compare every student's Reading score with the overall
+    Reading average.
+
+52. Compare every student's Writing score with the overall
+    Writing average.
+
+53. Create a Boolean array showing:
+
+    True  → student's score is above the subject average
+    False → student's score is not above the subject average
+
+54. Find students who are above the average in ALL THREE subjects.
+
+55. Find students who are below the average in ALL THREE subjects.
+
+56. Count how many students are above average in:
+    - Math
+    - Reading
+    - Writing
+
+======================================================================
+PART 8 — GROUP FILTERING USING CATEGORICAL COLUMNS
+======================================================================
+
+Use the original categorical columns to create Boolean masks.
+
+57. Filter students whose lunch is:
+
+    "standard"
+
+58. Filter students whose lunch is:
+
+    "free/reduced"
+
+59. Using those masks, extract the corresponding Math,
+    Reading and Writing scores.
+
+60. Calculate the average Math, Reading and Writing scores for
+    the standard-lunch group.
+
+61. Calculate the average Math, Reading and Writing scores for
+    the free/reduced-lunch group.
+
+62. Find the difference between the two groups' subject averages.
+
+63. Repeat the same type of analysis for:
+
+    test preparation course
+    Compare:
+    - completed
+    - none
+
+64. Calculate the average total score for students who completed
+    the test preparation course.
+
+65. Calculate the average total score for students who did not
+    complete the test preparation course.
+
+66. Find the difference between these two average total scores.
+
+======================================================================
+PART 9 — GENDER-BASED ANALYSIS
+======================================================================
+
+67. Create masks for the two gender groups present in the dataset.
+
+68. Extract Math, Reading and Writing scores for each group.
+
+69. Calculate the average of all three subjects for each group.
+
+70. Calculate the average total score for each group.
+
+71. Calculate the difference between the group averages.
+
+IMPORTANT:
+Do not declare one group as "better" based only on the result.
+Your task is to report the numerical difference.
+
+======================================================================
+PART 10 — TEST PREPARATION ANALYSIS
+======================================================================
+
+72. Create a Boolean mask for students who completed the
+    test preparation course.
+
+73. Create another mask for students who did not complete it.
+
+74. Extract the three subject scores for both groups.
+
+75. Calculate subject-wise averages for both groups.
+
+76. Calculate the average total score for both groups.
+
+77. Calculate the difference in average Math scores.
+
+78. Calculate the difference in average Reading scores.
+
+79. Calculate the difference in average Writing scores.
+
+80. Find students who did NOT complete the course but still
+    scored above 80 in all three subjects.
+
+======================================================================
+PART 11 — BROADCASTING CHALLENGE
+======================================================================
+
+The school decides to apply subject-specific bonus marks:
+
+Math     → +5
+Reading  → +3
+Writing  → +2
+
+81. Create a NumPy bonus array.
+
+82. Use broadcasting to add the bonuses to every student's
+    corresponding subject score.
+
+83. Do NOT use a loop to add the bonus.
+
+84. Calculate the new total score for every student.
+
+85. Calculate the new average score for every student.
+
+86. Find students whose original average was below 50 but whose
+    new average is 50 or above.
+
+87. Find students whose original total score was below 150 but
+    whose new total score is 150 or above.
+
+88. Find the new highest total score.
+
+89. Find the new lowest total score.
+
+90. Calculate how much the average score increased because of
+    the bonus.
+
+======================================================================
+PART 12 — PERFORMANCE CLASSIFICATION
+======================================================================
+
+Use np.where() to classify students based on their ORIGINAL
+average score.
+
+90 and above  → Excellent
+75–89         → Very Good
+60–74         → Good
+50–59         → Average
+Below 50      → Needs Improvement
+
+91. Create the performance category for every student.
+
+92. Count the number of students in each category.
+
+93. Calculate the percentage of students in each category.
+
+94. Find the students belonging to the "Excellent" category.
+
+95. Find the students belonging to the "Needs Improvement"
+    category.
+
+======================================================================
+PART 13 — ADVANCED COMBINED CONDITIONS
+======================================================================
+
+96. Find students who:
+
+    - completed the test preparation course
+    - have an average above 75
+    - have no subject below 60
+
+97. Find students who:
+
+    - did not complete the test preparation course
+    - have an average above 75
+    - scored above 80 in at least one subject
+
+98. Find students who:
+
+    - have standard lunch
+    - have an average above the overall average
+    - have no subject below 50
+
+99. Find students who:
+
+    - have free/reduced lunch
+    - scored below the overall average
+    - have at least one subject below 40
+
+100. Find students who satisfy ALL of the following:
+
+     - Math > 70
+     - Reading > 70
+     - Writing > 70
+     - average > overall average
+     - no subject below 60
+
+======================================================================
+PART 14 — FINAL DATA ANALYST REPORT
+======================================================================
+
+Create a final report containing:
+
+DATASET
+-------
+Total Students:
+Total Columns:
+
+SUBJECT STATISTICS
+------------------
+Math Average:
+Reading Average:
+Writing Average:
+
+Math Maximum:
+Reading Maximum:
+Writing Maximum:
+
+Math Minimum:
+Reading Minimum:
+Writing Minimum:
+
+Math Standard Deviation:
+Reading Standard Deviation:
+Writing Standard Deviation:
+
+STUDENT PERFORMANCE
+-------------------
+Highest Total Score:
+Lowest Total Score:
+Highest Average:
+Lowest Average:
+
+Students Above Average:
+Students Below Average:
+
+Students Above 80 in All Subjects:
+Students Below 40 in At Least One Subject:
+
+BALANCED PERFORMANCE
+--------------------
+Students With Score Difference < 10:
+Students With Score Difference > 30:
+
+LUNCH ANALYSIS
+--------------
+Standard Lunch Average Total:
+Free/Reduced Lunch Average Total:
+Difference:
+
+TEST PREPARATION ANALYSIS
+-------------------------
+Completed Course Average Total:
+No Course Average Total:
+Difference:
+
+GENDER ANALYSIS
+---------------
+Average Total — Group 1:
+Average Total — Group 2:
+Difference:
+
+BONUS ANALYSIS
+--------------
+Original Average:
+New Average:
+Increase:
+
+Students Who Changed From Below 50 To 50+:
+
+PERFORMANCE CATEGORIES
+----------------------
+Excellent:
+Very Good:
+Good:
+Average:
+Needs Improvement:
+

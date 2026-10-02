@@ -1,0 +1,346 @@
+============================================================
+NUMPY & PANDAS PRACTICE SHEET
+============================================================
+PART A — PANDAS DATAFRAME PRACTICE
+50 QUESTIONS
+============================================================
+
+A1 — DATAFRAME CREATION & COLUMN OPERATIONS
+------------------------------------------------------------
+
+1. Create a DataFrame containing Name, Marks, and Age for 8 students. Create a new column Result based on whether the student's marks satisfy a condition you decide.
+
+2. Create a DataFrame containing First_Name and Last_Name for 7 people. Create a Full_Name column by combining both columns.
+
+3. Create an employee DataFrame with Name, Salary, and Bonus. Create a new column containing the employee's total income.
+
+4. Create a DataFrame with Product, Price, and Quantity. Create a new column containing the total price for each product.
+
+5. Create a student DataFrame with Name, Maths, and Science. Create a new column containing the total marks.
+
+6. Using the same DataFrame, create another column containing the average marks.
+
+7. Create an employee DataFrame with Name, Salary, and Experience. Create a new column using both salary and experience.
+
+8. Create a DataFrame containing Name, Age, City, and Salary. Change all values in the City column to another set of cities.
+
+9. Create a DataFrame with a Marks column. Increase every mark by a value of your choice.
+
+10. Create a DataFrame containing Name, Department, and Salary. Create a new column that represents salary after applying a bonus percentage.
+
+
+A2 — UPDATING DATAFRAME VALUES
+------------------------------------------------------------
+
+11. Create a DataFrame with at least 8 rows and update the value of one particular cell using a row label and column name.
+
+12. Create an employee DataFrame and update the salary of one specific employee.
+
+13. Create a student DataFrame and update the marks of two specific students.
+
+14. Create an employee DataFrame and update the department of multiple selected employees.
+
+15. Create a DataFrame with at least 10 rows. Change the city for three selected rows.
+
+16. Update values in a particular column only for rows satisfying a condition.
+
+17. Create a marks DataFrame and increase the marks of students belonging to a particular group.
+
+18. Create an employee DataFrame and update salaries for employees whose current salary satisfies a condition.
+
+19. Change values in two different columns for a selected row.
+
+20. Create a DataFrame and update multiple rows and multiple columns in one operation.
+
+
+A3 — RENAMING & INDEX OPERATIONS
+------------------------------------------------------------
+
+21. Create a DataFrame with at least 7 rows and rename one column.
+
+22. Rename three columns of an employee DataFrame.
+
+23. Rename a column and then use the new column name to modify some values.
+
+24. Create a DataFrame and replace its default numeric index with employee IDs of your choice.
+
+25. Create a student DataFrame and assign custom index labels such as S101, S102, etc.
+
+26. After creating custom index labels, select two specific students using their index labels.
+
+27. Change one of the existing index labels to a new value.
+
+28. Create a DataFrame with employee IDs as the index and retrieve employees based on their index labels.
+
+29. Create a DataFrame, assign meaningful index labels, and modify one value using its index label and column name.
+
+30. Create a DataFrame with custom indexes and perform several row selections using different combinations of row labels and column names.
+
+
+A4 — FILTERING, SORTING & COUNTING
+------------------------------------------------------------
+
+31. Create an employee DataFrame with Name, Age, City, Department, and Salary. Filter employees whose salary is above a value of your choice.
+
+32. Using the same DataFrame, filter employees belonging to a particular department.
+
+33. Filter employees whose age falls within a range.
+
+34. Filter employees who satisfy two conditions simultaneously.
+
+35. Filter employees satisfying either of two conditions.
+
+36. Sort an employee DataFrame by salary in ascending order.
+
+37. Sort the same DataFrame by salary in descending order.
+
+38. Sort a DataFrame using two columns simultaneously.
+
+39. Create a DataFrame containing city information and find the frequency of each city using an appropriate Pandas function.
+
+40. Create a DataFrame containing department information and determine how many employees belong to each department.
+
+
+A5 — GROUPBY, AGGREGATION & STATISTICS
+------------------------------------------------------------
+
+41. Create an employee DataFrame with Name, Department, City, and Salary. Group employees according to department and calculate the average salary.
+
+42. Group an employee DataFrame by city and calculate the maximum salary for each city.
+
+43. Group employees by department and calculate the minimum salary.
+
+44. Group employees by department and calculate both the average salary and maximum salary.
+
+45. Group employees by city and calculate the total salary for each city.
+
+46. Create a DataFrame containing Department, Age, Salary, and Working_Hours. Group by department and calculate different statistical measures for different columns.
+
+47. Create a student DataFrame containing Course, Marks, and Age. Group students by course and calculate average marks and maximum age.
+
+48. Create an employee DataFrame and use named aggregation to calculate at least two different statistics with meaningful output column names.
+
+49. Create an employee DataFrame and calculate the mean, median, minimum, maximum, and standard deviation of the salary column.
+
+50. Create a 12-row employee DataFrame and perform a complete analysis involving:
+    - selecting columns
+    - selecting rows
+    - filtering
+    - sorting
+    - updating values
+    - creating a new column
+    - renaming a column
+    - changing index labels
+    - counting categorical values
+    - grouping
+    - aggregation
+    - statistical analysis
+
+
+============================================================
+PART B — NUMPY BROADCASTING
+20 QUESTIONS
+============================================================
+
+B1 — BROADCASTING WITH SCALARS
+------------------------------------------------------------
+
+51. Create a 1D array of 8 numbers and add a scalar value to every element using broadcasting.
+
+52. Create a 1D marks array and increase every mark by a bonus value using broadcasting.
+
+53. Create a salary array and multiply every salary by a percentage factor using broadcasting.
+
+54. Create a 2D array representing marks and subtract the same value from every element using broadcasting.
+
+55. Create a 3 x 4 array and divide every element by the same scalar value using broadcasting.
+
+
+B2 — BROADCASTING WITH 1D AND 2D ARRAYS
+------------------------------------------------------------
+
+56. Create a 3 x 4 matrix and a 1D array containing 4 values. Perform an operation between them using broadcasting.
+
+57. Create a 4 x 3 matrix and a 1D array containing 3 values. Use broadcasting to perform an operation column-wise.
+
+58. Create a marks matrix where rows represent students and columns represent subjects. Create a separate 1D array containing bonus marks for each subject and apply it using broadcasting.
+
+59. Create a salary matrix where each column represents a different salary component. Create a 1D array containing adjustment factors for each column and apply them using broadcasting.
+
+60. Create a 5 x 3 array and a 3-element array. Perform at least two different mathematical operations using broadcasting.
+
+
+B3 — BROADCASTING CHALLENGES
+------------------------------------------------------------
+
+61. Create a 4 x 5 matrix and apply different values to each column using broadcasting.
+
+62. Create a 5 x 4 matrix and apply different values to each column.
+
+63. Create a 4 x 3 matrix representing monthly expenses for four people across three categories. Add category-wise adjustments using broadcasting.
+
+64. Create a 3 x 5 marks matrix. Apply different bonus marks to the five subjects using broadcasting.
+
+65. Create a 4 x 3 salary matrix representing three salary components. Apply different percentage adjustments to each component.
+
+66. Create two arrays whose shapes allow broadcasting and perform addition.
+
+67. Create two arrays whose shapes allow broadcasting and perform multiplication.
+
+68. Create a 2D array and a 1D array where broadcasting operates across the columns. Perform subtraction.
+
+69. Create a 2D array and a 1D array where broadcasting operates across the columns. Perform division.
+
+70. Create a suitable 2D array and 1D array yourself and demonstrate three different broadcasting operations in the same program.
+
+
+============================================================
+PART C — SLICING PRACTICE
+20 QUESTIONS
+============================================================
+
+C1 — NUMPY 1D SLICING
+------------------------------------------------------------
+
+71. Create a 1D array containing at least 15 values. Extract a continuous section from the middle of the array.
+
+72. Create a 1D marks array and extract the marks of students positioned at alternate indexes.
+
+73. Create a 1D array and extract every third element starting from an index of your choice.
+
+74. Create a 1D array and use slicing to obtain the elements in reverse order.
+
+75. Create a 1D array and perform at least four different slices using different starting positions, ending positions, and step sizes.
+
+
+C2 — NUMPY 2D SLICING
+------------------------------------------------------------
+
+76. Create a 5 x 6 NumPy matrix. Extract a specific group of consecutive rows and columns from the middle.
+
+77. Create a 6 x 5 marks matrix. Extract selected rows and selected columns using slicing.
+
+78. Create a 5 x 5 matrix and extract its upper-left section.
+
+79. Create a 5 x 5 matrix and extract its lower-right section.
+
+80. Create a 6 x 6 matrix and extract alternate rows and alternate columns to form a smaller matrix.
+
+
+C3 — DATAFRAME SLICING & INDEX-BASED SELECTION
+------------------------------------------------------------
+
+81. Create an 8-row employee DataFrame with employee IDs as the index. Select the first three employees and the Name and Salary columns.
+
+82. Create a student DataFrame with custom index labels. Select three specific students using their index labels and display two selected columns.
+
+83. Create a 10-row DataFrame and select a continuous range of rows using their index labels.
+
+84. Create a DataFrame with custom indexes and select alternate rows based on their integer positions.
+
+85. Select the first five rows and last three columns of a DataFrame based on their positions.
+
+86. Select rows 2 through 6 and columns 1 through 3 based on their positions.
+
+87. Create an employee DataFrame with meaningful index labels. Select two non-consecutive employees and two specific columns.
+
+88. Create a DataFrame and select rows between two index labels along with a selected group of columns.
+
+89. Create a DataFrame and retrieve:
+    - one specific cell using its label
+    - one specific cell using its position
+    - multiple rows using labels
+    - multiple rows using positions.
+
+90. Create a 10-row DataFrame, assign custom index labels, and perform at least six different types of row/column selections, including:
+    - single row
+    - multiple rows
+    - row range
+    - single column
+    - multiple columns
+    - specific rows + specific columns.
+
+
+============================================================
+PART D — NUMPY CREATION, IDENTITY, EYE, ARANGE,
+RESHAPE & PROPERTIES
+============================================================
+
+D1 — ARRAY CREATION
+------------------------------------------------------------
+
+91. Create a NumPy array using arange() that contains a sequence with a custom starting value, ending value, and step size. Reshape the result into a suitable 2D structure.
+
+92. Create an array using arange() and reshape it into a 3 x 4 matrix. Then determine its dimensions, number of elements, and data type.
+
+93. Create a 4 x 4 matrix representing an identity-style structure using the appropriate NumPy function. Inspect its shape, dimensions, size, and data type.
+
+94. Create a matrix using np.eye() with a number of rows and columns that you choose. Experiment with a non-default diagonal position.
+
+95. Create a 2D array using arange(), reshape it, and then change its shape into another valid arrangement.
+
+
+D2 — MIXED NUMPY CHALLENGES
+------------------------------------------------------------
+
+96. Create a NumPy array containing at least 24 values. Perform all of the following:
+    - reshape it
+    - inspect shape
+    - inspect ndim
+    - inspect size
+    - inspect dtype
+    - perform slicing
+    - perform filtering
+    - calculate at least three statistical measures.
+
+97. Create a 4 x 6 NumPy matrix representing marks. Perform:
+    - row-wise aggregation
+    - column-wise aggregation
+    - filtering
+    - slicing
+    - broadcasting
+    - cumulative calculation.
+
+98. Create a NumPy array containing missing values. Reshape it into a 2D structure and perform appropriate calculations while ignoring missing values. Also perform slicing and filtering.
+
+99. Create three different NumPy arrays using three different creation techniques. For each array, investigate its shape, ndim, size, and dtype, then perform at least one mathematical operation.
+
+100. NUMPY + PANDAS 
+
+Create your own datasets.
+
+Dataset 1:
+A NumPy array containing information such as marks, salaries, sales, or temperatures.
+
+Dataset 2:
+A Pandas DataFrame containing at least 10 rows.
+
+For the NumPy dataset, perform a combination of:
+    - arange()
+    - reshaping
+    - 1D/2D slicing
+    - filtering
+    - broadcasting
+    - aggregation functions
+    - cumulative calculations
+    - handling missing values
+    - shape
+    - ndim
+    - size
+    - dtype
+
+For the Pandas dataset, perform a combination of:
+    - row/column selection
+    - slicing
+    - filtering
+    - updating values
+    - creating columns
+    - renaming columns
+    - changing index labels
+    - sorting
+    - frequency counting
+    - grouping
+    - aggregation
+    - statistical functions
+
+
